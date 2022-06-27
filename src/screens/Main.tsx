@@ -1,17 +1,10 @@
-import { Text, View } from 'react-native'
+import { Box, Text } from '@app/atoms'
 
 const MainScreen = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: 'white',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}
-    >
+    <Box flex={1} justifyContent="center" alignItems="center">
       <Text>Hello World!!!</Text>
-    </View>
+    </Box>
   )
 }
 
