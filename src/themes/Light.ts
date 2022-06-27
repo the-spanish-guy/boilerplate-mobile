@@ -55,16 +55,20 @@ const theme = createTheme({
     $sidebarBackground: palette.navy20,
     $sidebarForeground: palette.navy900,
     $sidebarSeparator: palette.paper00 + '20',
-    $headerBarBackground: palette.paper20
+    $headerBarBackground: palette.paper20,
+    $transparent: 'transparent'
   },
 
   statusBar: {
-    barStyle: 'dark-content' as StatusBarStyle
+    barStyle: 'auto' as StatusBarStyle
   },
   textVariants: {
     defaults: {
       color: '$foreground',
       fontSize: 16
+    },
+    sidebar: {
+      color: '$sidebarForeground'
     }
   }
 })
