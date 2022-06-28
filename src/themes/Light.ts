@@ -1,5 +1,6 @@
 import { createTheme } from '@shopify/restyle'
 import { StatusBarStyle } from 'expo-status-bar'
+import Constants from 'expo-constants'
 
 const palette = {
   purpleLight: '#8C6FF7',
@@ -34,6 +35,7 @@ const theme = createTheme({
     md: 12,
     lg: 16,
     xl: 24,
+    '2xl': Constants.statusBarHeight,
     xxl: 48,
     hg: 128
   },
@@ -69,6 +71,10 @@ const theme = createTheme({
     },
     sidebar: {
       color: '$sidebarForeground'
+    },
+    title: {
+      fontSize: 18,
+      color: '$sidebarBackground'
     }
   }
 })
