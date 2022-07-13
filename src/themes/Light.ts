@@ -57,7 +57,13 @@ const theme = createTheme({
     $headerBarBackground: palette.paper20,
     $transparent: 'transparent'
   },
-
+  borderRadii: {
+    xs: 4,
+    sm: 16,
+    md: 24,
+    lg: 64,
+    hg: 128
+  },
   statusBar: {
     barStyle: 'auto' as StatusBarStyle
   },
@@ -77,7 +83,7 @@ const theme = createTheme({
   buttonVariants: {
     defaults: {
       padding: 'sm',
-      borderRadius: 4
+      borderRadius: 'xs'
     },
     teste: {}
   }
