@@ -3,13 +3,9 @@ import { StatusBarStyle } from 'expo-status-bar'
 import Constants from 'expo-constants'
 
 const palette = {
-  purpleLight: '#8C6FF7',
-  purplePrimary: '#5A31F4',
-  purpleDark: '#3F22AB',
+  purple: '#8C6FF7',
 
-  greenLight: '#56DCBA',
-  greenPrimary: '#0ECD9D',
-  greenDark: '#0A906E',
+  green: '#56DCBA',
 
   black: '#0B0B0B',
   white: '#F0F2F3',
