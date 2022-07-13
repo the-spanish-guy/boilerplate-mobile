@@ -40,6 +40,7 @@ const theme = createTheme({
     tablet: 768
   },
   colors: {
+    $purple: palette.purple,
     white: palette.white,
     black: palette.black,
     red: palette.red,
@@ -72,6 +73,13 @@ const theme = createTheme({
       fontSize: 18,
       color: '$sidebarBackground'
     }
+  },
+  buttonVariants: {
+    defaults: {
+      padding: 'sm',
+      borderRadius: 4
+    },
+    teste: {}
   }
 })
 

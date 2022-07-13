@@ -59,7 +59,8 @@ export const theme: Theme = createTheme({
       fontSize: 18,
       color: 'white'
     }
-  }
+  },
+  buttonVariants: { ...light.buttonVariants }
 })
 
 export default theme
