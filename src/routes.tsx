@@ -3,17 +3,17 @@ import { NavigatorScreenParams } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import * as React from 'react'
 import Sidebar from './components/Sidebar'
+import DetailScreen from './screens/Detail'
 import MainScreen from './screens/Main'
 
 export type HomeDrawerParamList = {
   Main: {}
+  Detail: {}
 }
 
 export type RootStackParamList = {
   Home: NavigatorScreenParams<HomeDrawerParamList>
-  Detail: {
-    detailId: string
-  }
+  Detail: NavigatorScreenParams<HomeDrawerParamList>
 }
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
@@ -36,6 +36,11 @@ const Home = () => {
           headerShown: false
         }}
       />
+      <Drawer.Screen
+        name="Detail"
+        component={DetailScreen}
+        options={{ headerShown: false }}
+      />
     </Drawer.Navigator>
   )
 }
@@ -50,6 +55,12 @@ const Routes = () => {
           headerShown: false
         }}
       />
+      {/* <Stack.Screen
+        name="Detail"
+        component={DetailScreen}
+        options={{ headerShown: false }}
+      /> */}
+      {/* Rotas que podem ser acessadas sem a necessidade do drawer */}
     </Stack.Navigator>
   )
 }

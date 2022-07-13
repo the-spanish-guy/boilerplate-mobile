@@ -7,19 +7,19 @@ import HeaderBar from '@app/components/HeaderBar'
 import { HomeDrawerParamList, RootStackParamList } from '@app/routes'
 
 type Props = CompositeScreenProps<
-  DrawerScreenProps<HomeDrawerParamList, 'Main'>,
+  DrawerScreenProps<HomeDrawerParamList, 'Detail'>,
   NativeStackScreenProps<RootStackParamList>
 >
 
-const MainScreen = ({ ...props }: Props) => {
+const DetailScreen = ({ ...props }: Props) => {
   return (
     <Container>
       <HeaderBar {...props} />
       <Box flex={1} justifyContent="center" alignItems="center">
-        <Text>Hello World!!!</Text>
+        <Text>Details Screen</Text>
       </Box>
     </Container>
   )
 }
 
-export default MainScreen
+export default DetailScreen
