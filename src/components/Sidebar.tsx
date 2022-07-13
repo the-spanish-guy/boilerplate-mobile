@@ -1,7 +1,8 @@
-import { Box, Text } from '@app/atoms'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 import { DrawerContentComponentProps } from '@react-navigation/drawer'
-import { TouchableHighlight } from 'react-native-gesture-handler'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
+
+import { Box, Text } from '@app/atoms'
 
 // const menuItems = {}
 
@@ -22,19 +23,17 @@ const Sidebar: React.FC<DrawerContentComponentProps> = ({ ...props }) => {
               Boilerplate
             </Text>
           </Box>
-          <Box alignItems="flex-start" p="lg" borderWidth={1}>
-            <TouchableHighlight
-              onPress={() => props.navigation.navigate('Main')}
-            >
+          <Box alignItems="flex-start" p="lg">
+            <TouchableOpacity onPress={() => props.navigation.navigate('Main')}>
               <Text variant="sidebar">Main Page</Text>
-            </TouchableHighlight>
+            </TouchableOpacity>
           </Box>
-          <Box alignItems="flex-start" p="lg" borderWidth={1}>
-            <TouchableHighlight
+          <Box alignItems="flex-start" p="lg">
+            <TouchableOpacity
               onPress={() => props.navigation.navigate('Detail')}
             >
               <Text variant="sidebar">Details Page</Text>
-            </TouchableHighlight>
+            </TouchableOpacity>
           </Box>
         </SafeAreaView>
       </Box>
