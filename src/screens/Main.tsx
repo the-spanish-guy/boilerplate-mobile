@@ -15,13 +15,7 @@ const MainScreen = ({ ...props }: Props) => {
   return (
     <Container>
       <HeaderBar {...props} />
-      <Box
-        flex={1}
-        justifyContent="center"
-        alignItems="center"
-        borderWidth={1}
-        borderColor="red"
-      >
+      <Box flex={1} justifyContent="center" alignItems="center">
         <Text>Hello World!!!</Text>
       </Box>
     </Container>
