@@ -1,5 +1,6 @@
-import Light, { Theme } from './Light'
 import Dark from './Dark'
+import Light, { Theme } from './Light'
+
 export type ThemeNames = 'light' | 'dark'
 
 export interface LocalTheme {

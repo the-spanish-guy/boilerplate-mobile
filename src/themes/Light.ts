@@ -1,27 +1,8 @@
+import Constants from 'expo-constants'
 import { createTheme } from '@shopify/restyle'
 import { StatusBarStyle } from 'expo-status-bar'
-import Constants from 'expo-constants'
 
-const palette = {
-  purple: '#8C6FF7',
-
-  green: '#56DCBA',
-
-  black: '#0B0B0B',
-  white: '#F0F2F3',
-
-  red: 'red',
-  blue: 'blue',
-  yellow: 'yellow',
-  paper00: '#ffffff',
-  paper10: '#f5f5f4',
-  paper20: '#e6e6e6',
-  paper300: '#767577',
-  paper900: '#202020',
-  blue70: '#2185d0',
-  navy20: '#171a21',
-  navy900: '#b9babc'
-}
+import { light } from './Colors'
 
 const theme = createTheme({
   spacing: {
@@ -40,22 +21,18 @@ const theme = createTheme({
     tablet: 768
   },
   colors: {
-    $purple: palette.purple,
-    white: palette.white,
-    black: palette.black,
-    red: palette.red,
-    blue: palette.blue,
-    yellow: palette.yellow,
+    $white: light.white,
+    $black: light.black,
 
-    $primary: palette.blue70,
-    $windowBackground: '#f0f0f0',
-    $background: palette.paper10,
-    $foreground: palette.paper900,
-    $sidebarBackground: palette.navy20,
-    $sidebarForeground: palette.navy900,
-    $sidebarSeparator: palette.paper00 + '20',
-    $headerBarBackground: palette.paper20,
-    $transparent: 'transparent'
+    $primary: light.primary,
+
+    $title: light.blue[500],
+    $text: light.purple[500],
+    $background: light.primary,
+    $transparent: 'transparent',
+    $sidebarSeparator: light.overlay[600],
+    $sidebarBackground: light.overlay[500],
+    $sidebarForeground: light.overlay[600]
   },
   borderRadii: {
     xs: 4,
@@ -69,15 +46,15 @@ const theme = createTheme({
   },
   textVariants: {
     defaults: {
-      color: '$foreground',
+      color: '$text',
       fontSize: 16
     },
     sidebar: {
-      color: '$sidebarForeground'
+      color: '$title'
     },
     title: {
       fontSize: 18,
-      color: '$sidebarBackground'
+      color: '$title'
     }
   },
   buttonVariants: {
