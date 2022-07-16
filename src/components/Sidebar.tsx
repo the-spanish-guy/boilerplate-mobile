@@ -17,7 +17,7 @@ const Sidebar: React.FC<DrawerContentComponentProps> = ({ ...props }) => {
             pb="sm"
             mt="xs"
             borderBottomColor="$sidebarSeparator"
-            borderBottomWidth={1}
+            borderBottomWidth={0.4}
           >
             <Text variant="sidebar" m="lg">
               Boilerplate
@@ -25,14 +25,18 @@ const Sidebar: React.FC<DrawerContentComponentProps> = ({ ...props }) => {
           </Box>
           <Box alignItems="flex-start" p="lg">
             <TouchableOpacity onPress={() => props.navigation.navigate('Main')}>
-              <Text variant="sidebar">Main Page</Text>
+              <Text pl="md" variant="sidebar">
+                Main Page
+              </Text>
             </TouchableOpacity>
           </Box>
           <Box alignItems="flex-start" p="lg">
             <TouchableOpacity
               onPress={() => props.navigation.navigate('Detail')}
             >
-              <Text variant="sidebar">Details Page</Text>
+              <Text pl="md" variant="sidebar">
+                Details Page
+              </Text>
             </TouchableOpacity>
           </Box>
         </SafeAreaView>

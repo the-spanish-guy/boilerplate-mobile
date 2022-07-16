@@ -23,14 +23,16 @@ const Count: React.FC = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Button onPress={setCount}>
-          <FeatherIcon name="plus-circle" size={30} color="$primary" />
+        <Button onPress={setDecrementCount}>
+          <FeatherIcon name="minus-circle" size={30} color="$text" />
         </Button>
 
-        <Text fontSize={20}>{count}</Text>
+        <Text color="$text" fontSize={20}>
+          {count}
+        </Text>
 
-        <Button onPress={setDecrementCount}>
-          <FeatherIcon name="minus-circle" size={30} color="$primary" />
+        <Button onPress={setCount}>
+          <FeatherIcon name="plus-circle" size={30} color="$text" />
         </Button>
       </Box>
     </>

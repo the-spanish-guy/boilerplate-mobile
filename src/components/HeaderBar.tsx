@@ -28,13 +28,13 @@ const HeaderBar: React.FC<DrawerScreenProps<HomeDrawerParamList> & Props> = ({
       justifyContent="space-between"
     >
       <TouchableOpacity onPress={handleSideBar}>
-        <FeatherIcon name="menu" size={22} />
+        <FeatherIcon name="menu" size={22} color="$title" />
       </TouchableOpacity>
       <Text variant="title">Boilerplate</Text>
 
       {handleThemePicker ? (
         <Button onPress={handleThemePicker}>
-          <FeatherIcon name="more-vertical" size={22} />
+          <FeatherIcon name="more-vertical" size={22} color="$title" />
         </Button>
       ) : (
         <>
