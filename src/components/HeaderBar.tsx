@@ -37,9 +37,9 @@ const HeaderBar: React.FC<DrawerScreenProps<HomeDrawerParamList> & Props> = ({
           <FeatherIcon name="more-vertical" size={22} color="$title" />
         </Button>
       ) : (
-        <>
+        <Box p="sm">
           <Text>{''}</Text>
-        </>
+        </Box>
       )}
     </Box>
   )
