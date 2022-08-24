@@ -73,7 +73,3 @@ $ tree
 
 ---
 Made by [the spanish guy](https://github.com/the-spanish-guy) with :purple_heart:
-
-<https://stackoverflow.com/questions/23989232/is-there-a-way-to-represent-a-directory-tree-in-a-github-readme-md>
-
-<https://medium.com/@shradhaagarwal01/how-to-represent-folder-directory-tree-with-links-in-github-readme-in-less-than-5-minutes-84230fdcb1>
