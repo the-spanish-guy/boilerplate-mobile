@@ -22,7 +22,7 @@ git clone git@github.com:the-spanish-guy/boilerplate-mobile.git boilerplate
 
 cd boilerplate
 
-yarn instal
+yarn install
 ```
 
 ou clique em `use this template`
