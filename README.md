@@ -1,17 +1,11 @@
 # boilerplate mobile
 
 <p align="center">
-  <img src=".github/screenshots/dark/details.png" width="180" />
-  <img src=".github/screenshots/dark/home.png" width="180" />
-  <img src=".github/screenshots/dark/sidebar.png" width="180"/>
-  <img src=".github/screenshots/dark/theme.png" width="180"/>
+  <img src=".github/screenshots/dark.png" width="200" />
 </p>
 
 <p align="center">
-  <img src=".github/screenshots/light/details.png" width="180" />
-  <img src=".github/screenshots/light/home.png" width="180" />
-  <img src=".github/screenshots/light/sidebar.png" width="180"/>
-  <img src=".github/screenshots/light/theme.png" width="180"/>
+  <img src=".github/screenshots/light.png" width="200" />
 </p>
 
 # :zap: Técnologias
