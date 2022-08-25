@@ -1,11 +1,11 @@
 # boilerplate mobile
 
 <p align="center">
-  <img src=".github/screenshots/dark.png" width="200" />
+  <img src=".github/screenshots/dark.png" width="100%" />
 </p>
 
 <p align="center">
-  <img src=".github/screenshots/light.png" width="200" />
+  <img src=".github/screenshots/light.png" width="100%" />
 </p>
 
 # :zap: Técnologias
